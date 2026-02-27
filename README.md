@@ -17,7 +17,8 @@ Once running, the app serves a simple web page with two available services:
 
 Before you begin, make sure you have the following installed:
 
-- [Java 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
+- [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or [Java 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
+- [Python 3.10](https://www.python.org/downloads/release/python-3100/) (for the Google Cloud SDK download)
 - [Apache Maven](https://maven.apache.org/install.html)
 - [Git](https://git-scm.com/)
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) (for cloud deployment)
@@ -87,7 +88,7 @@ http://localhost:8080/rest/utils/time
 ## Deploying to Google App Engine
 
 ### 1. Create a project on Google Cloud Console
-Go to https://console.cloud.google.com/ and create a new project. Take note of the Project ID (e.g. `my-apdc-app`).
+Go to https://console.cloud.google.com/ and create a new project. Take note of the Project ID (e.g. `my-adc-app`).
 
 ### 2. Authenticate with Google Cloud
 
@@ -117,7 +118,7 @@ https://<your-project-id>.appspot.com/
 src/
 └── main/
     ├── java/
-    │   └── pt/unl/fct/di/apdc/firstwebapp/resources/
+    │   └── pt/unl/fct/di/adc/firstwebapp/resources/
     │       └── ComputationResource.java   ← REST endpoints
     └── webapp/
         ├── index.html                     ← Front page
